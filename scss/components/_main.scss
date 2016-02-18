@@ -1,0 +1,12 @@
+html {
+	font-family: $impact;
+}
+
+.btn {
+	@include btn($red);
+		span {
+			color: $white;
+		}
+}
+
+
