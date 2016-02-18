@@ -1,12 +1,16 @@
-//Colors
-$red: #a00000;
-$dark-red: #660000;
+// Colors
+$blue: #3498db;
+$dark-blue: #2980b9;
+$grey: #aaaaaa;
+$grey-dark: #666666;
 $white: #fff;
-$primary: $red;
-$bg-color: #B00000;
 
+// You can use variables inside variables
+$primary: $blue;
+$secondary: $grey;
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+// Font Families
+$helvetica: Helvetica, Arial, sans-serif; 
+$roboto-slab: 'Roboto', sans-serif;
 
-//Font families
-
-$impact: Impact, Charcoal, sans-serif;
