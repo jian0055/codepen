@@ -79,7 +79,11 @@ a:hover:after {
 }
 
 .icon-btn-donate {
+<<<<<<< HEAD
+  text-align: center;
+=======
   color: black;
+>>>>>>> gh-pages
 }
 
 .dropdown {
@@ -99,19 +103,33 @@ a:hover:after {
 
 .dropdown:nth-child(even) {
   background: #eeeeee;
+<<<<<<< HEAD
+  transform: perspective(1000px) rotateX(-20deg);
+  transform-origin: top;
+  -webkit-transform: perspective(1000px) rotateX(-20deg);
+=======
   transform: perspective(500px) rotateX(-50deg);
   transform-origin: top;
   -webkit-transform: perspective(500px) rotateX(-50deg);
+>>>>>>> gh-pages
   -webkit-transform-origin: top;
 }
 
 .dropdown:nth-child(odd) {
   background: #f5f5f5;
+<<<<<<< HEAD
+  transform: perspective(1000px) rotateX(20deg);
+  transform-origin: bottom;
+  -webkit-transform: perspective(1000px) rotateX(20deg);
+  -webkit-transform-origin: bottom;
+  margin-top: -11px;
+=======
   transform: perspective(500px) rotateX(50deg);
   transform-origin: top;
   -webkit-transform: perspective(500px) rotateX(50deg);
   -webkit-transform-origin: top;
   margin-top: 20px;
+>>>>>>> gh-pages
 }
 
 .menu-item:hover ul, .menu-item:focus ul {
@@ -120,6 +138,45 @@ a:hover:after {
   opacity: 1;
 }
 
+<<<<<<< HEAD
+.hvr-curl-top-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+.hvr-curl-top-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  background: linear-gradient(135deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+
+.hvr-curl-top-left:hover:before, .hvr-curl-top-left:focus:before, .hvr-curl-top-left:active:before {
+  width: 25px;
+  height: 25px;
+}
+
+=======
+>>>>>>> gh-pages
 @media only screen and (max-width: 37.5em) {
   .navigation li {
     float: none;
