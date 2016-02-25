@@ -78,7 +78,7 @@ a:hover:after {
 }
 
 .icon-btn-donate {
-  color: black;
+  text-align: center;
 }
 
 .dropdown {
@@ -98,19 +98,19 @@ a:hover:after {
   
   &:nth-child(even){
     background: #eeeeee;
-    transform: perspective(500px) rotateX(-50deg);
+    transform: perspective(1000px) rotateX(-20deg);
     transform-origin: top;  
-    -webkit-transform: perspective(500px) rotateX(-50deg);
+    -webkit-transform: perspective(1000px) rotateX(-20deg);
     -webkit-transform-origin: top;
   }
   
   &:nth-child(odd){
     background: #f5f5f5;
-    transform: perspective(500px) rotateX(50deg);
-    transform-origin: top;
-    -webkit-transform: perspective(500px) rotateX(50deg);
-    -webkit-transform-origin: top;
-    margin-top: 20px;
+    transform: perspective(1000px) rotateX(20deg);
+    transform-origin: bottom;
+    -webkit-transform: perspective(1000px) rotateX(20deg);
+    -webkit-transform-origin: bottom;
+    margin-top: -11px;
   }
 }
 
@@ -119,6 +119,42 @@ a:hover:after {
   bottom: 200px;
   opacity: 1;
 }
+
+.hvr-curl-top-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-curl-top-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  background: linear-gradient(135deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-top-left:hover:before, .hvr-curl-top-left:focus:before, .hvr-curl-top-left:active:before {
+  width: 25px;
+  height: 25px;
+}
+
+
 
 @media only screen and (max-width: 37.5em){
   
